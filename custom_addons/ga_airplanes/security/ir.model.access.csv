@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ga_airplane,access.ga_airplane,model_ga_airplane,,1,1,1,1
+access_ga_airplane_model,access.ga_airplane_model,model_ga_airplane_model,,1,1,1,1
+access_ga_airline,access.ga_airline,model_ga_airline,,1,1,1,1

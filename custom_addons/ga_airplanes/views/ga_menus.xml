@@ -1,0 +1,6 @@
+<odoo>
+    <menuitem id="menu_aviation_root" name="Navega"/>
+    <menuitem id="menu_airplane" name="Airplane" parent="menu_aviation_root" action="action_airplane_tree"/>
+    <menuitem id="menu_airplane_model" name="Airplane Model" parent="menu_aviation_root" action="action_airplane_model_tree"/>
+    <menuitem id="menu_airline" name="Airline" parent="menu_aviation_root" action="action_airline_tree"/>
+</odoo>
