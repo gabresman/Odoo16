@@ -1,0 +1,47 @@
+<odoo>
+    <record id="view_airplane_tree" model="ir.ui.view">
+        <field name="name">ga.airplane.tree</field>
+        <field name="model">ga.airplane</field>
+        <field name="arch" type="xml">
+            <tree string="Airplanes">
+                <field name="capacity"/>
+                <field name="manufacture_date"/>
+                <field name="airplane_model_id"/>
+                <field name="registration_number"/>
+                <field name="airline_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_airplane_form" model="ir.ui.view">
+        <field name="name">ga.airplane.form</field>
+        <field name="model">ga.airplane</field>
+        <field name="arch" type="xml">
+            <form string="Airplane">
+                <sheet>
+                    <group id="group1">
+                        <field name="capacity"/>
+                    </group>
+                    <group id="group2">
+                        <field name="manufacture_date"/>
+                        <field name="airplane_model_id"/>
+                        <field name="registration_number"/>
+                        <field name="airline_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_airplane_tree" model="ir.actions.act_window">
+        <field name="name">Airplanes</field>
+        <field name="res_model">ga.airplane</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_airplane_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create the first airplane
+            </p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,39 @@
+<odoo>
+    <record id="view_airline_tree" model="ir.ui.view">
+        <field name="name">ga.airline.tree</field>
+        <field name="model">ga.airline</field>
+        <field name="arch" type="xml">
+            <tree string="Airlines">
+                <field name="name"/>
+                <field name="country_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_airline_form" model="ir.ui.view">
+        <field name="name">ga.airline.form</field>
+        <field name="model">ga.airline</field>
+        <field name="arch" type="xml">
+            <form string="Airlines">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="country_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_airline_tree" model="ir.actions.act_window">
+        <field name="name">Airline</field>
+        <field name="res_model">ga.airline</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_airline_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create the first airline
+            </p>
+        </field>
+    </record>
+</odoo>
