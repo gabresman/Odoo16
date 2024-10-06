@@ -12,6 +12,9 @@
                 <field name="consumption_per_hour"/>
                 <field name="flied_hours"/>
                 <field name="total_consumption"/>
+                <field name="age"/>
+                <field name="fuel_capacity"/>
+                <field name="max_flight_time"/>
             </tree>
         </field>
     </record>
@@ -21,18 +24,26 @@
         <field name="model">ga.airplane</field>
         <field name="arch" type="xml">
             <form string="Airplane">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="active,inactive,maintenance" options="{'clickable': '1'}"/>
+                </header>
                 <sheet>
-                    <group id="group1">
-                        <field name="capacity"/>
-                    </group>
-                    <group id="group2">
-                        <field name="manufacture_date"/>
-                        <field name="airplane_model_id"/>
-                        <field name="registration_number"/>
-                        <field name="airline_id"/>
-                        <field name="consumption_per_hour"/>
-                        <field name="flied_hours"/>
-                        <field name="total_consumption"/>
+                    <group>
+                        <group id="group1">
+                            <field name="capacity"/>
+                            <field name="manufacture_date"/>
+                            <field name="airplane_model_id"/>
+                            <field name="registration_number"/>
+                            <field name="airline_id"/>
+                        </group>
+                        <group id="group2" attrs="{'invisible': [('manufacture_date', '=', False)]}">
+                            <field name="consumption_per_hour"/>
+                            <field name="flied_hours"/>
+                            <field name="total_consumption"/>
+                            <field name="age"/>
+                            <field name="fuel_capacity"/>
+                            <field name="max_flight_time"/>
+                        </group>
                     </group>
                 </sheet>
             </form>
