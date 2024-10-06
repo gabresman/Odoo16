@@ -3,7 +3,7 @@
         <field name="name">ga.airline.tree</field>
         <field name="model">ga.airline</field>
         <field name="arch" type="xml">
-            <tree string="Airlines">
+            <tree>
                 <field name="name"/>
                 <field name="country_id"/>
             </tree>
@@ -14,7 +14,7 @@
         <field name="name">ga.airline.form</field>
         <field name="model">ga.airline</field>
         <field name="arch" type="xml">
-            <form string="Airlines">
+            <form>
                 <sheet>
                     <group>
                         <field name="name"/>
