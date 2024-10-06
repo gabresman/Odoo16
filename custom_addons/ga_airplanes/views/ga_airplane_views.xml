@@ -9,6 +9,9 @@
                 <field name="airplane_model_id"/>
                 <field name="registration_number"/>
                 <field name="airline_id"/>
+                <field name="consumption_per_hour"/>
+                <field name="flied_hours"/>
+                <field name="total_consumption"/>
             </tree>
         </field>
     </record>
@@ -27,6 +30,9 @@
                         <field name="airplane_model_id"/>
                         <field name="registration_number"/>
                         <field name="airline_id"/>
+                        <field name="consumption_per_hour"/>
+                        <field name="flied_hours"/>
+                        <field name="total_consumption"/>
                     </group>
                 </sheet>
             </form>

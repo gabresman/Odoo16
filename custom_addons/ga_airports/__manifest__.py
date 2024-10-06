@@ -1,16 +1,14 @@
 {
-    'name': 'Airplanes Management',
+    'name': 'Airports Management',
     'version': '1.0.0',
-    'summary': 'management of airplanes inventory',
+    'summary': 'management of airports',
     'depends': [
         'base',
         'ga_navega',
     ],
     'data': [
         'security/ir.model.access.csv',
-        'views/ga_airplane_views.xml',
-        'views/ga_airplane_model_views.xml',
-        'views/ga_airline_views.xml',
+        'views/ga_airport_views.xml',
         'views/ga_menus.xml',
     ],
     'installable': True,

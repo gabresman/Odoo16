@@ -1,0 +1,3 @@
+<odoo>
+    <menuitem id="menu_airport" name="Airport" parent="ga_navega.menu_aviation_root" action="action_airport_tree"/>
+</odoo>
