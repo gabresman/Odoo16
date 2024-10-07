@@ -3,7 +3,7 @@
         <field name="name">ga.airplane.tree</field>
         <field name="model">ga.airplane</field>
         <field name="arch" type="xml">
-            <tree string="Airplanes">
+            <tree>
                 <field name="capacity"/>
                 <field name="manufacture_date"/>
                 <field name="airplane_model_id"/>
@@ -23,9 +23,9 @@
         <field name="name">ga.airplane.form</field>
         <field name="model">ga.airplane</field>
         <field name="arch" type="xml">
-            <form string="Airplane">
+            <form>
                 <header>
-                    <field name="state" widget="statusbar" statusbar_visible="active,inactive,maintenance" options="{'clickable': '1'}"/>
+                    <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
                 </header>
                 <sheet>
                     <group>
